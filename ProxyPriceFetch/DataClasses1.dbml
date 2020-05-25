@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="oom_proxy" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-4MQQNQC;Initial Catalog=oom_proxy;Integrated Security=True" SettingsObjectName="ProxyPriceFetch.Properties.Settings" SettingsPropertyName="oom_proxyConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.artikli" Member="artiklis">
+    <Type Name="artikli">
+      <Column Name="proizvodID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nazivProizvoda" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="jedinicnaCijena" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.korisnici" Member="korisnicis">
+    <Type Name="korisnici">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ime" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="prezime" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="userID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
